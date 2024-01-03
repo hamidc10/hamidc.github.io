@@ -1,0 +1,57 @@
+/* style_links.css */
+
+/* Reset default margins and paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the contact links */
+.contact_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this for the desired vertical position */
+    background-color: rgb(231, 231, 231); /* Change this to your preferred background color */
+}
+
+/* Style the link icons */
+.contact_links a {
+    margin: 0 20px; /* Adjust spacing between icons */
+    text-decoration: none;
+}
+
+.contact_links img {
+    width: 80px; /* Adjust the size of the icons */
+    height: auto;
+    transition: transform 0.3s ease; /* Add a smooth hover effect */
+}
+
+/* Adjust the hover effect */
+.contact_links img:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+
+
+.back-button {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 9999;
+}
+
+.back-button a {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 140%;
+    padding: 27px;
+    background-color: #333;
+    color:rgb(214, 214, 214);
+    text-decoration: none;
+    display: inline-block; /* Ensuring square shape */
+    transition: border-color 0.3s; /* Adding transition for border color */
+  }
+  .back-button a:hover {
+    font-size: 160%; /* Increasing font size on hover */
+    color:rgba(214, 214, 214)
+  }
