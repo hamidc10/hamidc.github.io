@@ -147,6 +147,7 @@ h1 {
 
 
 @media (max-width: 768px) {
+ @media (max-width: 768px) {
   body {
     overflow: auto; /* Allow scrolling on smaller screens */
   }
@@ -156,9 +157,28 @@ h1 {
   }
 
   h1 {
-    font-size: 30px; /* Reduce font size for smaller screens */
-    top: 30%; /* Adjust vertical position */
+    font-size: 25px; /* Reduce font size for smaller screens */
+    top: 25%; /* Adjust vertical position */
   }
+
+  .links {
+    margin-top: 20px; /* Add space between header and links */
+    display: flex;
+    justify-content: center;
+  }
+
+  .links a {
+    text-decoration: none;
+    margin: 0px 20px;
+  }
+
+  /* Center the 'About' and 'Contacts' links */
+  .links a:nth-child(1),
+  .links a:nth-child(3) {
+    display: block;
+    text-align: center;
+  }
+}
 
   /* Adjust the grid of colored squares for better display */
   .top-left-square,
