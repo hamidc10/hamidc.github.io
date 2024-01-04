@@ -201,6 +201,10 @@ function handleResize() {
     }
   }
 }
+bgCanvas.addEventListener('click', function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+});
 
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimeout);
