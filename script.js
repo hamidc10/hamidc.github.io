@@ -1,5 +1,8 @@
 const canvas = document.getElementById('bgCanvas');
 const ctx = canvas.getContext('2d');
+const overlay = document.getElementById('overlay');
+
+overlay.style.pointerEvents = 'none';
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -209,9 +212,5 @@ window.addEventListener('mouseup', () => {
   handleResize();
 });
 
-const backgroundOverlay = document.getElementById('backgroundOverlay');
 
-backgroundOverlay.addEventListener('click', function(event) {
-  event.stopPropagation(); // Prevents the click event from propagating
-});
 
