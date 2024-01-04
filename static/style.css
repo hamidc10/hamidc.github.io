@@ -8,6 +8,16 @@ canvas {
   display: block;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Fixed width relative to viewport */
+  height: 100vh; /* Fixed height relative to viewport */
+  background: transparent;
+  z-index: 1;
+}
+
 .white-square {
   position: fixed;
   top: 0;
