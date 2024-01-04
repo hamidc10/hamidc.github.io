@@ -148,17 +148,19 @@ h1 {
 
 @media (max-width: 768px) {
   body {
+    margin: 0;
     overflow: auto; /* Allow scrolling on smaller screens */
+    background-color: #1a1a1a;
   }
 
   .white-square {
-    height: 150px; /* Increase height for better visibility */
+    height: 100px; /* Reduce the height for better visibility */
   }
 
   h1 {
     font-size: 20px; /* Reduce font size for smaller screens */
-    top: 50%; /* Move heading closer to the center */
-    left: 50%; /* Move heading closer to the center */
+    top: 50%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
     transform: translate(-50%, -50%); /* Center the heading */
   }
 
@@ -194,3 +196,5 @@ h1 {
     height: 10px; /* Decrease height for smaller screens */
   }
 }
+
+
