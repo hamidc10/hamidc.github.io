@@ -150,10 +150,58 @@ function animate() {
 
 animate();
 
+// function handleResize() {
+//   if (Math.abs(window.innerWidth - canvas.width) > refreshThreshold || Math.abs(window.innerHeight - canvas.height) > refreshThreshold) {
+//     location.reload();
+//   } else {
+//     canvas.width = window.innerWidth;
+//     canvas.height = window.innerHeight;
+
+//     const squareSize = Math.min(canvas.width, canvas.height) / gridSize;
+//     const squareRows = Math.ceil(canvas.height / squareSize);
+//     const squareCols = Math.ceil(canvas.width / squareSize);
+
+//     squares.length = 0;
+
+//     for (let i = 0; i < squareRows; i++) {
+//       for (let j = 0; j < squareCols; j++) {
+//         squares.push({ row: i, col: j });
+//       }
+//     }
+
+//     snake1Path.forEach((segment, index) => {
+//       snake1Path[index] = {
+//         x: index * squareSize / 2,
+//         y: squareSize / 2
+//       };
+//     });
+
+//     snake2Path.forEach((segment, index) => {
+//       snake2Path[index] = {
+//         x: canvas.width - index * squareSize / 2,
+//         y: canvas.height - squareSize / 2
+//       };
+//     });
+
+//     snake3Path.forEach((segment, index) => {
+//       snake3Path[index] = {
+//         x: canvas.width / 2,
+//         y: index * squareSize / 2
+//       };
+//     });
+
+//     for (let i = 0; i < squares.length; i++) {
+//       squares[i] = {
+//         row: Math.floor(i / squareCols),
+//         col: i % squareCols
+//       };
+//     }
+//   }
+// }
+
 function handleResize() {
   if (Math.abs(window.innerWidth - canvas.width) > refreshThreshold || Math.abs(window.innerHeight - canvas.height) > refreshThreshold) {
-    location.reload();
-  } else {
+    // Adjust the canvas size if the window size change exceeds the threshold
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
@@ -198,6 +246,7 @@ function handleResize() {
     }
   }
 }
+
 
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimeout);
