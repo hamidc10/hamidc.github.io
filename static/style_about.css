@@ -205,34 +205,5 @@ body {
     width: 60%; /* Adjust width as needed */
 }
 
-@media (max-width: 768px) {
-  body {
-    margin: 0;
-    background-color: #dde1eb85;
-  }
-
-  .box {
-    width: 60px; /* Decrease the width of the boxes */
-    height: 60px; /* Decrease the height of the boxes */
-    margin: 5px; /* Adjust the margin for better spacing */
-  }
-
-  .box .box-face .box-text img {
-    max-width: 40px; /* Adjust the max-width for the icon images */
-    max-height: 40px; /* Adjust the max-height for the icon images */
-  }
-
-  #about-heading {
-    font-size: 20px; /* Increase font size for better readability */
-    text-align: center; /* Center-align the heading */
-    margin-top: 20px; /* Add some top margin for separation */
-  }
-
-  p {
-    font-size: 16px; /* Increase font size for better readability */
-    text-align: justify; /* Justify text for better presentation */
-    margin: 20px; /* Add margins for better spacing */
-  }
-}
 
 
