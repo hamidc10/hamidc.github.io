@@ -147,8 +147,7 @@ h1 {
 
 
 @media (max-width: 768px) {
- @media (max-width: 768px) {
-  body {
+ body {
     overflow: auto; /* Allow scrolling on smaller screens */
   }
 
@@ -157,7 +156,7 @@ h1 {
   }
 
   h1 {
-    font-size: 25px; /* Reduce font size for smaller screens */
+    font-size: 20px; /* Reduce font size for smaller screens */
     top: 25%; /* Adjust vertical position */
   }
 
