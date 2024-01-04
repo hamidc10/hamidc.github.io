@@ -205,6 +205,8 @@ function handleResize() {
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(handleResize, 250); // Debouncing the resize event
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 });
 
 window.addEventListener('mouseup', () => {
