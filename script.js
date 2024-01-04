@@ -209,3 +209,9 @@ window.addEventListener('mouseup', () => {
   handleResize();
 });
 
+const backgroundOverlay = document.getElementById('backgroundOverlay');
+
+backgroundOverlay.addEventListener('click', function(event) {
+  event.stopPropagation(); // Prevents the click event from propagating
+});
+
