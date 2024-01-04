@@ -182,6 +182,7 @@ h1 {
     text-align: center;
   }
 
+  
   /* Adjust the grid of colored squares for better display */
   .top-left-square,
   .top-left2-square,
@@ -192,9 +193,22 @@ h1 {
   .top-left7-square,
   .top-left8-square,
   .top-left9-square {
+    position: absolute; /* Set position to absolute */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
     width: 10px; /* Decrease width for smaller screens */
     height: 10px; /* Decrease height for smaller screens */
   }
+
+  /* Adjust individual positioning for each square */
+  .top-left2-square { left: 10px; }
+  .top-left3-square { top: 10px; }
+  .top-left4-square { top: 10px; left: 10px; }
+  .top-left5-square { left: 20px; }
+  .top-left6-square { top: 20px; }
+  .top-left7-square { top: 20px; left: 10px; }
+  .top-left8-square { top: 20px; left: 20px; }
+  .top-left9-square { top: 30px; left: 20px; }
 }
 
 
