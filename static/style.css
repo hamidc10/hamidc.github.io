@@ -147,7 +147,7 @@ h1 {
 
 
 @media (max-width: 768px) {
- body {
+  body {
     overflow: auto; /* Allow scrolling on smaller screens */
   }
 
@@ -157,7 +157,9 @@ h1 {
 
   h1 {
     font-size: 20px; /* Reduce font size for smaller screens */
-    top: 25%; /* Adjust vertical position */
+    top: 50%; /* Move heading closer to the center */
+    left: 50%; /* Move heading closer to the center */
+    transform: translate(-50%, -50%); /* Center the heading */
   }
 
   .links {
@@ -177,7 +179,6 @@ h1 {
     display: block;
     text-align: center;
   }
-}
 
   /* Adjust the grid of colored squares for better display */
   .top-left-square,
