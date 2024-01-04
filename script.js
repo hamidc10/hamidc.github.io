@@ -200,10 +200,11 @@ animate();
 // }
 
 function handleResize() {
-  if (Math.abs(window.innerWidth - canvas.width) > refreshThreshold || Math.abs(window.innerHeight - canvas.height) > refreshThreshold) {
-    // Adjust the canvas size if the window size change exceeds the threshold
+    if (Math.abs(window.innerWidth - canvas.width) > refreshThreshold || Math.abs(window.innerHeight - canvas.height) > refreshThreshold) {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+  }
+
 
     const squareSize = Math.min(canvas.width, canvas.height) / gridSize;
     const squareRows = Math.ceil(canvas.height / squareSize);
