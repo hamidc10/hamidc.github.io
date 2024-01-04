@@ -144,3 +144,33 @@ h1 {
   top: 60px;
   left: -0px;
 }
+
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto; /* Allow scrolling on smaller screens */
+  }
+
+  .white-square {
+    height: 150px; /* Increase height for better visibility */
+  }
+
+  h1 {
+    font-size: 30px; /* Reduce font size for smaller screens */
+    top: 30%; /* Adjust vertical position */
+  }
+
+  /* Adjust the grid of colored squares for better display */
+  .top-left-square,
+  .top-left2-square,
+  .top-left3-square,
+  .top-left4-square,
+  .top-left5-square,
+  .top-left6-square,
+  .top-left7-square,
+  .top-left8-square,
+  .top-left9-square {
+    width: 10px; /* Decrease width for smaller screens */
+    height: 10px; /* Decrease height for smaller screens */
+  }
+}
