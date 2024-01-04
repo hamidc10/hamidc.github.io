@@ -9,13 +9,12 @@ canvas {
 }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw; /* Fixed width relative to viewport */
-  height: 100vh; /* Fixed height relative to viewport */
-  background: transparent;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows clicks to pass through */
 }
 
 .white-square {
