@@ -211,7 +211,7 @@ body {
         font-family: 'Pixelify Sans', sans-serif;
         position: absolute;
         font-size: 6vw; /* Increase heading font size for mobile */
-        left: 5%; /* Adjust position for mobile */
+        left: 65%; /* Adjust position for mobile */
     }
 
     p {
