@@ -208,13 +208,17 @@ body {
 /* Target mobile devices with a max-width media query */
 @media only screen and (max-width: 768px) {
     #about-heading {
+        font-family: 'Pixelify Sans', sans-serif;
+        position: absolute;
         font-size: 6vw; /* Increase heading font size for mobile */
         left: 5%; /* Adjust position for mobile */
     }
 
     p {
-        font-size: 6vw; /* Increase paragraph font size for mobile */
-        width: 90%; /* Adjust width for better readability on smaller screens */
+        font-family: 'Raleway', sans-serif;
+        position: absolute;
+        font-size: 5vw; /* Increase paragraph font size for mobile */
+        width: 85%; /* Adjust width for better readability on smaller screens */
         left: 5%; /* Adjust position for mobile */
     }
 }
