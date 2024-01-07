@@ -208,5 +208,3 @@ window.addEventListener('mouseup', () => {
   clearTimeout(resizeTimeout);
   handleResize();
 });
-
-
