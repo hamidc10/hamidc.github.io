@@ -1,9 +1,5 @@
-
 const canvas = document.getElementById('bgCanvas');
 const ctx = canvas.getContext('2d');
-const overlay = document.getElementById('overlay');
-
-overlay.style.pointerEvents = 'none';
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -202,19 +198,15 @@ function handleResize() {
     }
   }
 }
-bgCanvas.addEventListener('click', function(event) {
-  event.preventDefault();
-  event.stopPropagation();
-});
 
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(handleResize, 250); // Debouncing the resize event
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
 });
 
 window.addEventListener('mouseup', () => {
   clearTimeout(resizeTimeout);
   handleResize();
 });
+
+
